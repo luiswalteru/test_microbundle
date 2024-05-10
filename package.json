@@ -1,0 +1,33 @@
+{
+  "name": "test_microbundle",
+  "version": "0.0.1",
+  "description": "Pruebas con la librería microbundle",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiswalteru/test_microbundle.git"
+  },
+  "author": "luiswalteru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luiswalteru/test_microbundle/issues"
+  },
+  "homepage": "https://github.com/luiswalteru/test_microbundle#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "microbundle": "^0.15.1"
+  },
+  "type": "module",
+  "source": "src/index.js",
+  "exports": {
+    "require": "./dist/test_microbundle.cjs",
+    "default": "./dist/test_microbundle.modern.js"
+  },
+  "main": "./dist/test_microbundle.js",
+  "module": "./dist/test_microbundle.module.js",
+  "unpkg": "./dist/test_microbundle.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "start": "lite-server"
+  }
+}

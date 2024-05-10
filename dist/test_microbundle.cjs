@@ -1,0 +1,2 @@
+module.exports=function(){console.log("showButton()");var e=document.createElement("button");e.innerHTML="HI!",e.style.cssText="width: 135px; height: 35px; color: rgb(255, 255, 255); background: rgb(3, 155, 229); font-size: 14px; font-family: sans-serif; cursor: pointer; border: 1px solid rgb(19 59 78);",document.body.appendChild(e),e.addEventListener("click",function(e){alert("HI!")})};
+//# sourceMappingURL=test_microbundle.cjs.map

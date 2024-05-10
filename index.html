@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>test_microbundle</title>
+    <script type="module">
+      import showButton from "http://localhost:3000/dist/test_microbundle.module.js";
+      document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+          console.log("Document doaded!");
+          showButton();
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <h1>My First Heading 3</h1>
+    <p>My first paragraph.</p>
+  </body>
+</html>
